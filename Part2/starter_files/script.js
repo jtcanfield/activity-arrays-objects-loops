@@ -94,9 +94,20 @@ The solution file contains two ways to accomplish this task.
 
 Answer: This function should output the string "*\n**\n***\n****\n*****\n"
 */
-
+let starString = [];
 function printTriangle(){
     // Your answer goes here:
+    let i = 0
+    while (i < 5){
+      let starObjects = ""
+      for (i; i < 5; i++ ){
+        starObjects += "*"
+        starString.push(starObjects + "\n");
+        // starString.push("\n");
+      }
+    i++
+    }
+    return starString
 }
 
 /*
