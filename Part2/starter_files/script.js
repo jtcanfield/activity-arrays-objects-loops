@@ -1,13 +1,19 @@
 /*
-In this activity, your task is to complete the unfinished functions. Instructions accompany each function explaining what the function should do and what value it should return. You will implement logic using loops, conditional statements, arrays, and objects to return the values specified in the instructions.
+In this activity, your task is to complete the unfinished functions. Instructions accompany each
+function explaining what the function should do and what value it should return. You will implement
+logic using loops, conditional statements, arrays, and objects to return the values specified in the instructions.
 
-The `test.js` file contains tests for all of the functions in this activity. Do not change any code in `test.js`. To see the output from `test.js` and to evaluate your work, open `index.html` in Chrome and view the console in the Developer Tools. You'll know that you are finding success when all of the `console.log` statements print 'true'.
+The `test.js` file contains tests for all of the functions in this activity. Do not change any code in
+`test.js`. To see the output from `test.js` and to evaluate your work, open `index.html` in Chrome and
+view the console in the Developer Tools. You'll know that you are finding success when all of the `console.log`
+statements print 'true'.
 */
 
 
 
 /*
-1. Iterate over `numberArray` and multiply each number by the iterator `i`. Then, add all of the values in `numberArray` together to produce a single large number. Return the large number.
+1. Iterate over `numberArray` and multiply each number by the iterator `i`. Then, add all of the values in `numberArray`
+ together to produce a single large number. Return the large number.
 
 HINT: You will need to initialize a variable to store the total number and to return the final value.
 
@@ -17,10 +23,18 @@ let numberArray = [ 23, 234, 64 , 89, 2, 756, 3, 58, 674, 32, 756, 23, 6 ];
 
 function getBigNumber(){
     // Your answer goes here:
+    let fullyAddedNumber =  0;
+    for(let i = 0; i < numberArray.length; i++){
+      fullyAddedNumber += numberArray[ i ] *= i
+    }
+    return fullyAddedNumber
 }
 
 /*
-2. The "people" array contains a list of objects. Each object has "name" and "age" properties. Iterate over "people" and evaluate each object. If "age" is less than 18, add a "status" property with the value of "minor" to that object. If "age" is over 65, add a "status" property of "senior", else add a "status" property of "adult". Return "people".
+2. The "people" array contains a list of objects. Each object has "name" and "age" properties. Iterate over
+"people" and evaluate each object. If "age" is less than 18, add a "status" property with the value of "minor"
+ to that object. If "age" is over 65, add a "status" property of "senior", else add a "status" property of
+ "adult". Return "people".
 
 Answer: This function should return:
 [{ name : "Anne",   age : 22, status : "adult"  },
@@ -54,7 +68,8 @@ function checkPeopleStatus(){
 ****
 *****
 
-This configuration of stars can be accomplished with a single string if you include a newline character ("\n") after each row of stars. Newline characters aren't visible, but if they were, the triangle would look like this:
+This configuration of stars can be accomplished with a single string if you include a newline character ("\n") after
+each row of stars. Newline characters aren't visible, but if they were, the triangle would look like this:
 
 *\n
 **\n
@@ -62,7 +77,8 @@ This configuration of stars can be accomplished with a single string if you incl
 ****\n
 *****\n
 
-HINT: Maintain a variable to hold the "rows" and another variable to hold the entire "triangle" string. This task can be accomplished without nested loops.
+HINT: Maintain a variable to hold the "rows" and another variable to hold the entire "triangle" string.
+ This task can be accomplished without nested loops.
 
 The solution file contains two ways to accomplish this task.
 
@@ -74,7 +90,8 @@ function printTriangle(){
 }
 
 /*
-4. The "matrix" array contains arrays of letters. "matrix" is an array of arrays. Nested arrays are sometimes referred to as "multi-dimensional" array. To access information from a multi-dimensional array, use bracket notation.
+4. The "matrix" array contains arrays of letters. "matrix" is an array of arrays. Nested arrays are sometimes
+referred to as "multi-dimensional" array. To access information from a multi-dimensional array, use bracket notation.
 
 For instance, to access "b", I have to access the first array in "matrix". `matrix[ 0 ]` will return the first array.
 
@@ -82,9 +99,14 @@ Then, I need to access the second element in that array.
 
 `matrix[ 0 ][ 1 ]` will return the string "b"; This notation can be read as "return index 1 of index 0 of matrix".
 
-Complete the function to iterate over the multi-dimensional array and convert the "columns" of characters into "rows" and vice versa. An example of a column is "a", "d", "g". An example of a row is "a", "b", "c". Shifting columns to rows in this way is called "transposition." Complete the function so that it transposes the multi-dimensional array and returns the new array.
+Complete the function to iterate over the multi-dimensional array and convert the "columns" of characters
+into "rows" and vice versa. An example of a column is "a", "d", "g". An example of a row is "a", "b", "c".
+Shifting columns to rows in this way is called "transposition." Complete the function so that it transposes
+the multi-dimensional array and returns the new array.
 
-HINT: This task is HARD! It requires nested loops and careful management of variables. Don't get overwhelmed if you can't complete it today. Give it your best shot. This task will be a good test of your understanding as you progress in your programming ability.
+HINT: This task is HARD! It requires nested loops and careful management of variables. Don't get overwhelmed
+if you can't complete it today. Give it your best shot. This task will be a good test of your understanding
+as you progress in your programming ability.
 
 Answer: This function should return:
 
