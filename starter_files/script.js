@@ -39,7 +39,7 @@ let human = {
 
 function getHumanName(){
     // Answer goes here:
-
+    return human.firstname + " " + human.lastname
 }
 
 /*
@@ -52,11 +52,11 @@ let terrain = [ "plain", "mountain", "hill", "beach", "valley" ];
 
 function getTerrain(){
     // Answer goes here:
-
+    return terrain[ 2 ]
 }
 
 /*
-3. Return the 2nd element of the "hobbies" property of the "child" object 
+3. Return the 2nd element of the "hobbies" property of the "child" object
 
 Answer: This function should return the string "running"
 */
@@ -165,5 +165,5 @@ let option2 = [ 76, 364, 4, 934, 6, 345, 6789, 123, 675, 12 ];
 
 function getFinalChoice(){
     // Answer goes here:
-    
+
 }
