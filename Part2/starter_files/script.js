@@ -56,6 +56,16 @@ let people = [
 
 function checkPeopleStatus(){
     // Your answer goes here:
+    for (let i = 0; i < people.length; i++){
+      if (people[i].age < 18){
+        people [i].status = "minor";
+      } else if (people[i].age > 65){
+        people[i].status = "senior";
+      } else {
+        people[i].status = "adult";
+      }
+    }
+    return people;
 }
 
 
