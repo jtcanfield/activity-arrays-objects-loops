@@ -137,11 +137,17 @@ let bigNums = [ 3, 12, 7, 56, 19, 9, 1, 5, 14, 10, 2 ];
 
 function nixLittleNums(){
     // Answer goes here:
-
+    for (let i = 0; i < bigNums.length; i++){
+      if (bigNums [ i ] < 10){
+        bigNums[ i ] = "x";
+      }
+    }
+    return bigNums
 }
 
 /*
-8. This example includes the "randomWord" function. "randomWord" will select a random element from the "words" array and return that element. Use "randomWord" to build a new array "lotsOfWords" with 100 elements from "words".  Return "lotsOfWords".
+8. This example includes the "randomWord" function. "randomWord" will select a random element from the "words" array
+and return that element. Use "randomWord" to build a new array "lotsOfWords" with 100 elements from "words".  Return "lotsOfWords".
 
 HINT: You'll need to call the same function 100 times. "words" is a small array, so "lotsOfWords" will have many duplicated words.
 
@@ -152,11 +158,15 @@ function randomWord(){
     let words = [ "puzzling", "thirsty", "sound", "shade", "moon" ];
     return words[ Math.floor( Math.random() * 5 ) ];
 }
-
+console.log();
 function getBigWordList(){
     let lotsOfWords = [];
     // Answer goes here:
-
+    for(let i = 0; i < 100; i++){
+      let word = randomWord();
+      lotsOfWords.push(word);
+    }
+    return lotsOfWords
 }
 
 /*
