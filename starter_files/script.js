@@ -68,7 +68,7 @@ let child = {
 
 function getChildHobby(){
     // Answer goes here:
-
+    return child.hobbies[ 1 ]
 }
 
 /*
@@ -83,7 +83,10 @@ let nums = [ 234, 6, 2376, 886, 234, 457, 78 ];
 
 function getDoubledArray(){
     // Answer goes here:
-
+    for (let i = 0; i < 7; i++){
+    nums [ i ] *= 3;
+  }
+  return nums
 }
 
 /*
