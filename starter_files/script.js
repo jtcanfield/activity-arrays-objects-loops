@@ -102,7 +102,10 @@ let characters = [ "k", "?", "4", "Fd", "9", "$", "a", "l", ";", "Y", "1", "!"];
 function getGibberish(){
     let gibberish = "";
     // Answer goes here:
-
+    for (let i = 0; i < characters.length; i++){
+      gibberish += characters[ i ]
+    }
+    return gibberish
 }
 
 /*
@@ -118,7 +121,8 @@ let hero = {
 
 function addHealthToHero(){
     // Answer goes here:
-
+    hero.health = ("9 hearts");
+    return hero
 }
 
 /*
