@@ -170,9 +170,12 @@ function getBigWordList(){
 }
 
 /*
-9. Within the function, create a new variable "finalChoice" and initialize it with an empty array. Then, iterate over the "option1" and "option2" arrays using a single loop. Within the loop, compare the values of each array at each index. Push the larger of the two numbers onto the "finalChoice" array. Return "finalChoice".
+9. Within the function, create a new variable "finalChoice" and initialize it with an empty array.
+Then, iterate over the "option1" and "option2" arrays using a single loop. Within the loop, compare the values
+of each array at each index. Push the larger of the two numbers onto the "finalChoice" array. Return "finalChoice".
 
-HINT: You'll need to "loop" over these arrays. "If" the number in option1 is larger, push it onto finalChoice, "else" push the number in option2 onto finalChoice.
+HINT: You'll need to "loop" over these arrays. "If" the number in option1 is larger, push it onto finalChoice,
+"else" push the number in option2 onto finalChoice.
 
 Answer: This should return [76, 586, 12, 934, 76, 345, 6789, 123, 675, 43654]
 */
@@ -182,5 +185,15 @@ let option2 = [ 76, 364, 4, 934, 6, 345, 6789, 123, 675, 12 ];
 
 function getFinalChoice(){
     // Answer goes here:
-
+    let finalChoice = [];
+    for(let i = 0; i < option1.length; i++){
+      if (option1[ i ] > option2[ i ]){
+        finalChoice.push(option1[ i ]);
+      } else if (option1[ i ] < option2[ i ]){
+        finalChoice.push(option2[ i ]);
+      } else{
+        console.log("You Did This Wrong");
+      }
+    }
+return finalChoice
 }
